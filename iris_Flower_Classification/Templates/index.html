@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <form action='/predict' method="POST">
+            Sepal Length: <input type="text" name = 'sepal_length'><br>
+            Sepal Width: <input type="text" name = 'sepal_width'><br>
+            Petal Length: <input type="text" name = 'petal_length'><br>
+            Petal Width: <input type="text" name = 'petal_width'><br>
+            Class: {{result}}
+
+
+              <!-- Result -->
+              <!-- <div class="results"> -->
+                <!-- {% if result==0 %} -->
+                <!-- <h1>Prediction: <span class='setosa'>Iris-setosa</span></h1> -->
+                <!-- <img class="gif" src="{{ url_for('static', filename='spam.webp') }}" alt="SPAM Image"> -->
+                <!-- {% elif prediction==1 %} -->
+                <!-- <h1>Prediction: <span class='versicolor'>Iris-versicolor</span></h1> -->
+                <!-- <img class="gif" src="{{ url_for('static', filename='not-spam.webp') }}" alt="Not a spam image"> -->
+                <!-- {% elif prediction==2 %} -->
+                <!-- <h1>Prediction: <span class='virginica'>Iris-virginica</span></h1> -->
+                <!-- {% endif %} -->
+              <!-- </div> -->
+
+
+             <br>
+            <input type='submit' value="Predict">
+        </form>
+    </body>
+</html>
