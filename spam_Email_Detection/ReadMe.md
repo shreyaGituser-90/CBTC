@@ -1,0 +1,1 @@
+The project involves building a model to analyze the text of emails and determine whether they are spam or legitimate (ham).
